@@ -1,0 +1,296 @@
+:root {
+  --pr-color: #ffffff;
+  --sc-color: #fbfbfb;
+  --Acc-color: #4e3c9f;
+  --text-color: #1f1f1f;
+  --textp-color: #797979;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: poppins-regular;
+  src: url('../font/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url('../font/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url('../font/poppins/Poppins-SemiBold.ttf');
+}
+
+body {
+  font-family: poppins-regular, 'sans-serif';
+  color: var(--text-color);
+  background-color: var(--pr-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--sc-color);
+}
+
+/* NavBar Style */
+.navbar {
+  background-color: var(--pr-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 12px 12px;
+  border-top: 6px solid #cdeeec;
+}
+.nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.nav-link:hover {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--Acc-color);
+}
+.navbar .nav-item .nav-link {
+  padding: 12px 28px;
+  position: relative;
+}
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--Acc-color);
+  width: auto;
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+.navbar .nav-item .nav-link.active::before
+/* ,.navbar .nav-item .nav-link:hover::before*/ {
+  transform: scale(1);
+}
+
+/* Hero Style */
+#hero {
+  padding: 100px 0px;
+}
+
+/* tentang */
+#tentang {
+  padding-top: 50px;
+  background: #9cddd9;
+}
+
+/* Fitur */
+#fitur {
+  padding: 100px 0px;
+  background-image: url("../img/bg_sumber.svg");
+  background-repeat: no-repeat;
+}
+
+#pembuat {
+  padding-bottom: 120px;
+}
+
+/* Footer */
+footer {
+  padding: 80px 0px;
+  background-color: #cdeeec;
+}
+.devider {
+  background: #4e3c9f;
+  width: 45px;
+  height: 4px;
+}
+.devider-panjang {
+  background: #4e3c9f;
+  height: 4px;
+}
+
+/* Ukuran Huruf*/
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 125%;
+}
+h2 {
+  color: var(--Acc-color);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+}
+h3 {
+  font-weight: 500;
+  font-size: 32px;
+}
+h4 {
+  line-height: 35px;
+  font-weight: 400;
+}
+h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--text-color);
+}
+h6 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
+p {
+  color: var(--textp-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+/* Button */
+.button-lg-primary {
+  background-color: var(--Acc-color);
+  border: 1px solid var(--Acc-color);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.button-lg-primary:hover {
+  background-color: transparent;
+  color: var(--Acc-color);
+  font-weight: 600;
+  border: 1px solid var(--Acc-color);
+  transition-duration: 0.4s;
+}
+
+/* Tentang */
+#lealo{
+  padding: 100px 0px;
+}
+
+/* Sejarah */
+#sejarah{
+  padding: 100px 0px;
+  background-image: url("../img/BG-Sejarah 1.svg");
+  background-repeat: no-repeat;
+}
+
+/* Istilah */
+#hero-istiah {
+  padding: 100px 0px;
+  background-image: url(../img/BG-Istilah.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#istilah{
+  padding: 100px 0px;
+}
+
+/* Prinsip */
+#prinsip{
+  padding: 100px 0px;
+}
+
+/* Kriteria */
+#kriteria{
+  padding: 100px 0px;
+}
+
+/* Jenis */
+#jenis{
+  padding: 100px 0px;
+}
+
+/* Elemen */
+#elemen{
+  padding: 100px 0px;
+}
+
+/* Warna */
+#warna{
+  padding: 100px 0px;
+}
+
+/* Sumber */
+#sumber{
+  background-image: url("../img/BG_Video.svg");
+  background-repeat: no-repeat;
+}
+
+/* Video */
+#video{
+  padding-top: 70px; padding-bottom: 100px;
+  background-image: url("../img/BG_Video.svg");
+  background-repeat: no-repeat;
+}
+
+/* Garasi */
+#garasi{
+  /* padding: 100px 0px; */
+  background: #9cddd9;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99999;
+  background: #50d2c9;
+  width: 40px;
+  height: 40px;
+  /* border-radius: px; */
+  border-color: #fff;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #c6f1ef;
+  color: #fff;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*-------------------------------------------------------------*/
+
+/* button lets go */
+.btn-letsgo {
+  background-color: #4e3c9f;
+  color: white;
+  font-weight: bold;
+  /* font-size: 36px; */
+  /* padding: 12px 140px; */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-letsgo:hover {
+  background-color: #543fb3;
+}
