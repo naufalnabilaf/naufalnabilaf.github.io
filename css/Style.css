@@ -219,7 +219,7 @@ p {
 /* Sumber */
 #sumber{
   background-image: url("../img/BG_Video.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 /* Video */
