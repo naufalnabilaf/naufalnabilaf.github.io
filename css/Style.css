@@ -92,6 +92,7 @@ a {
   background-repeat: no-repeat;
 }
 
+/* Pembuat */
 #pembuat {
   padding-bottom: 120px;
 }
@@ -181,7 +182,7 @@ p {
 /* Istilah */
 #hero-istiah {
   padding: 100px 0px;
-  background-image: url(../img/BG-Istilah.svg);
+  background-image: url(../img/bg_istilah.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

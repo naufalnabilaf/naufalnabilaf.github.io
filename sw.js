@@ -22,7 +22,7 @@ const assets = [
   "/font/poppins/Poppins-Bold.ttf",
   "/icon/font/bootstrap-icons.min.css",
   "/icon/font/fonts/bootstrap-icons.woff2",
-  "/img/Logo Icon.png",
+  "/img/logolealo.png",
   "/img/Karakter 1.gif",
   "/img/img-tentang.svg",
   "/img/card-logo.webp",
